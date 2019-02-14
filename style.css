@@ -1,0 +1,139 @@
+/*
+ Theme Name:   Businex Child
+ Theme URI:    http://removedforprivacy/wp-content/themes/businex-child/
+ Description:  Businex Child Theme
+ Author:       Gabrielle Marhue
+ Author URI:   --removedforprivacy--
+ Template:     businex
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  businex-child
+*/
+
+
+/*remove top header*/
+.top-header, h1.page-title, .wrap-inner-banner {
+	display:none;
+}
+
+/* sets order of front page icons and text for mobile */
+@media only screen and (max-width:480px){
+	.flex-container {
+          display: flex;
+          flex-direction: column;
+        }
+}
+
+/* flex container, orders icons under banner */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 4em 0 4em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.flex-container div{
+  padding: 5px;
+  margin-top: 10px;
+  font-size:22px;
+  flex:1 0 16.66%;
+vertical-align: middle;
+line-height: 100%;  
+}
+
+
+.forms {
+	flex: 1 0 33.33%!important;
+	align-items: center;
+	width: 100%!important;
+}
+
+/* make input and select fields half of page */
+form.wpcf7-form input, select{
+	border-radius: 1em;
+	width:50%!important;
+	height:3em;
+}
+
+/* make name fields stretch across page */
+#n-name input{
+	width:100%!important;
+}
+
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha{
+	border:none:
+}
+
+/* makes image round */
+.flex-container img{
+	border-radius:50%;
+}
+
+a.button2{
+display:inline-block;
+padding:0.5em 3em;
+border:0.16em solid #2a890b;
+border-radius:2em;
+color:#FFFFFF!important;
+background:#2a890b;
+margin:0 0.3em 0.3em 0;
+width:18em; 
+box-sizing: border-box;
+text-decoration:none;
+text-transform:uppercase;
+font-weight:400;
+text-align:center;
+transition: all 0.15s;
+}
+a.button2:hover{
+
+color:#2a890b!important;
+background:#FFFFFF;
+border-color:#2a890b;
+text-decoration:none;
+}
+a.button2:active{
+color:#2a890b;
+border-color:#2a890b;
+}
+
+/* make the name fields responsive for tablets */
+@media all and (max-width:700px){
+	
+	#n-name {
+		flex-direction:column;
+	}
+	
+	#n-name input {
+		margin-top:1em;
+	}
+}
+
+@media all and (max-width:480px){
+	
+a.button2{
+display:block;
+margin:0.4em auto;
+width:100%;
+}
+
+form.wpcf7-form input, form.wpcf7-form select{	
+	width: 100%!important;
+	}	
+	
+}
+
+.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active{
+	text-decoration:none;	
+	color: #2a890b!important;
+}
+
